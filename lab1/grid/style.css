@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 70% 15%;
+    height: 100%;
+}
+
+.header-image {
+    height: 100%;
+    grid-column: 1 / span 2;
+    background-image: url('../sky.jpg');
+}
+
+.main-text {
+    height: 100%;
+    grid-column: 1;
+    background-color: rgb(147, 30, 215);
+
+    position: relative;
+}
+
+.main-image {
+    height: 100%;
+    grid-column: 2;
+    background-image: url('../forest.jpg');
+}
+
+.footer-text {
+    height: 100%;
+    grid-column: 1 / span 2;
+    background-color: rgb(238, 255, 0);
+
+    position: relative;
+}
+
+.center-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-position {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    font-weight: bold;
+    font-size: 30px;
+}
